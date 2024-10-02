@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>한국 전통 달력 섹션</title>
+    <title>사주 PING</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -272,7 +272,7 @@
 
             getStemTenGods(dayStem, otherStem) {
                 const stems = ["甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"];
-                const tenGods = ["비견", "겁재", "식신", "상관", "편재", "정재", "칠살", "정관", "편인", "정인"];
+                const tenGods = ["비견", "겁재", "식신", "상관", "편재", "정재", "편관", "정관", "편인", "정인"];
                 
                 const dayIndex = stems.indexOf(dayStem);
                 const otherIndex = stems.indexOf(otherStem);
@@ -339,8 +339,8 @@
                         <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
                     </linearGradient>
                 </defs>
-                <text x="40" y="45" font-family="'Noto Sans KR', sans-serif" font-size="40" font-weight="400" fill="#5F6368">사주</text>
-                <text x="130" y="45" font-family="'Noto Sans KR', sans-serif" font-size="40" font-weight="700" fill="url(#logo-gradient)">핑</text>
+                <text x="20" y="45" font-family="'Noto Sans KR', sans-serif" font-size="40" font-weight="400" fill="#5F6368">사주</text>
+                <text x="100" y="45" font-family="'Noto Sans KR', sans-serif" font-size="40" font-weight="700" fill="url(#logo-gradient)">PING</text>
             </svg>
         </div>
         <div class="input-container">
@@ -349,8 +349,8 @@
         <div class="calendar-header">
             <div class="calendar-header-item">?</div>
             <div class="calendar-header-item">일간</div>
-            <div class="calendar-header-item" id="top-month-ss">정인</div>
-            <div class="calendar-header-item" id="top-year-ss">길제</div>
+            <div class="calendar-header-item" id="top-month-ss">-</div>
+            <div class="calendar-header-item" id="top-year-ss">-</div>
         </div>
         <div class="calendar-content">
             <div class="calendar-item">
@@ -362,19 +362,19 @@
             <div class="calendar-item">
                 <svg width="80" height="80" viewBox="0 0 80 80">
                     <rect width="80" height="80" fill="#FFFFFF" stroke="#000" stroke-width="2"></rect>
-                    <text x="40" y="40" font-size="36" fill="#000" text-anchor="middle" dominant-baseline="central" id="top-day">辛</text>
+                    <text x="40" y="40" font-size="36" fill="#000" text-anchor="middle" dominant-baseline="central" id="top-day">-</text>
                 </svg>
             </div>
             <div class="calendar-item">
                 <svg width="80" height="80" viewBox="0 0 80 80">
-                    <rect width="80" height="80" fill="#FFC107" stroke="#000" stroke-width="2"></rect>
-                    <text x="40" y="40" font-size="36" fill="#FFF" text-anchor="middle" dominant-baseline="central" id="top-month">戌</text>
+                    <rect width="80" height="80" fill="#FFFFFF" stroke="#000" stroke-width="2"></rect>
+                    <text x="40" y="40" font-size="36" fill="#000" text-anchor="middle" dominant-baseline="central" id="top-month">-</text>
                 </svg>
             </div>
             <div class="calendar-item">
                 <svg width="80" height="80" viewBox="0 0 80 80">
-                    <rect width="80" height="80" fill="#F44336" stroke="#000" stroke-width="2"></rect>
-                    <text x="40" y="40" font-size="36" fill="#FFF" text-anchor="middle" dominant-baseline="central" id="top-year">庚</text>
+                    <rect width="80" height="80" fill="#FFFFFF" stroke="#000" stroke-width="2"></rect>
+                    <text x="40" y="40" font-size="36" fill="#000" text-anchor="middle" dominant-baseline="central" id="top-year">-</text>
                 </svg>
             </div>
         </div>
@@ -388,27 +388,27 @@
             <div class="calendar-item">
                 <svg width="80" height="80" viewBox="0 0 80 80">
                     <rect width="80" height="80" fill="#FFFFFF" stroke="#000" stroke-width="2"></rect>
-                    <text x="40" y="40" font-size="36" fill="#000" text-anchor="middle" dominant-baseline="central" id="bottom-day">亥</text>
+                    <text x="40" y="40" font-size="36" fill="#000" text-anchor="middle" dominant-baseline="central" id="bottom-day">-</text>
                 </svg>
             </div>
             <div class="calendar-item">
                 <svg width="80" height="80" viewBox="0 0 80 80">
-                    <rect width="80" height="80" fill="#FFC107" stroke="#000" stroke-width="2"></rect>
-                    <text x="40" y="40" font-size="36" fill="#FFF" text-anchor="middle" dominant-baseline="central" id="bottom-month">子</text>
+                    <rect width="80" height="80" fill="#FFFFFF" stroke="#000" stroke-width="2"></rect>
+                    <text x="40" y="40" font-size="36" fill="#000" text-anchor="middle" dominant-baseline="central" id="bottom-month">-</text>
                 </svg>
             </div>
             <div class="calendar-item">
                 <svg width="80" height="80" viewBox="0 0 80 80">
-                    <rect width="80" height="80" fill="#F44336" stroke="#000" stroke-width="2"></rect>
-                    <text x="40" y="40" font-size="36" fill="#FFF" text-anchor="middle" dominant-baseline="central" id="bottom-year">戌</text>
+                    <rect width="80" height="80" fill="#FFFFFF" stroke="#000" stroke-width="2"></rect>
+                    <text x="40" y="40" font-size="36" fill="#000" text-anchor="middle" dominant-baseline="central" id="bottom-year">-</text>
                 </svg>
             </div>
         </div>
         <div class="calendar-footer">
             <div class="calendar-footer-item">?</div>
-            <div class="calendar-footer-item" id="bottom-day-ss">월건(납)</div>
-            <div class="calendar-footer-item" id="bottom-month-ss">정인</div>
-            <div class="calendar-footer-item" id="bottom-year-ss">길제</div>
+            <div class="calendar-footer-item" id="bottom-day-ss">-</div>
+            <div class="calendar-footer-item" id="bottom-month-ss">-</div>
+            <div class="calendar-footer-item" id="bottom-year-ss">-</div>
         </div>
     </div>
 </body>
