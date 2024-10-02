@@ -230,6 +230,99 @@
             document.querySelector("#bottom-day").textContent = day_ganji[1];
             document.querySelector("#bottom-day").parentNode.querySelector('rect').setAttribute('fill', setBgColor(day_ganji[1]));
             document.querySelector("#bottom-day").setAttribute('fill', setColor(day_ganji[1]));
+
+            const saju = new Saju("癸", "酉", "甲", "子", "丙", "子", "壬", "辰");
+            const tenGods = saju.getTenGods();
+
+            for (const [pillar, gods] of Object.entries(tenGods)) {
+                console.log(`${pillar}: 천간 - ${gods.stem}, 지지 - ${gods.branch}`);
+
+                switch (pillar) {
+                    case "년주":
+                        document.querySelector("#top-year-ss").textContent = gods.stem;
+                        document.querySelector("#bottom-year-ss").textContent = gods.branch;
+                    break;
+                    case "월주":
+                        document.querySelector("#top-month-ss").textContent = gods.stem;
+                        document.querySelector("#bottom-month-ss").textContent = gods.branch;
+                    break;
+                    case "일주":
+                        document.querySelector("#bottom-day-ss").textContent = gods.branch;
+                    break;
+                    case "시주":
+                    
+                    break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        class Saju {
+            constructor(yearStem, yearBranch, monthStem, monthBranch, dayStem, dayBranch, hourStem, hourBranch) {
+                this.yearStem = yearStem;
+                this.yearBranch = yearBranch;
+                this.monthStem = monthStem;
+                this.monthBranch = monthBranch;
+                this.dayStem = dayStem;
+                this.dayBranch = dayBranch;
+                this.hourStem = hourStem;
+                this.hourBranch = hourBranch;
+            }
+
+            getStemTenGods(dayStem, otherStem) {
+                const stems = ["甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"];
+                const tenGods = ["비견", "겁재", "식신", "상관", "편재", "정재", "칠살", "정관", "편인", "정인"];
+                
+                const dayIndex = stems.indexOf(dayStem);
+                const otherIndex = stems.indexOf(otherStem);
+                
+                const godIndex = (otherIndex + 10 - dayIndex) % 10;
+                return tenGods[godIndex];
+            }
+
+            getBranchTenGods(dayStem, branch) {
+                const branchHiddenStems = {
+                    "子": ["癸"],
+                    "丑": ["己", "癸", "辛"],
+                    "寅": ["甲", "丙", "戊"],
+                    "卯": ["乙"],
+                    "辰": ["戊", "乙", "癸"],
+                    "巳": ["丙", "庚", "戊"],
+                    "午": ["丁", "己"],
+                    "未": ["己", "丁", "乙"],
+                    "申": ["庚", "壬", "戊"],
+                    "酉": ["辛"],
+                    "戌": ["戊", "辛", "丁"],
+                    "亥": ["壬", "甲"]
+                };
+
+                const hiddenStems = branchHiddenStems[branch];
+                return hiddenStems.map(stem => this.getStemTenGods(dayStem, stem)).join(", ");
+            }
+
+            getTenGods() {
+                const result = {};
+                
+                result["년주"] = {
+                    stem: this.getStemTenGods(this.dayStem, this.yearStem),
+                    branch: this.getBranchTenGods(this.dayStem, this.yearBranch)
+                };
+                result["월주"] = {
+                    stem: this.getStemTenGods(this.dayStem, this.monthStem),
+                    branch: this.getBranchTenGods(this.dayStem, this.monthBranch)
+                };
+                result["일주"] = {
+                    stem: "일주",
+                    branch: this.getBranchTenGods(this.dayStem, this.dayBranch)
+                };
+                result["시주"] = {
+                    stem: this.getStemTenGods(this.dayStem, this.hourStem),
+                    branch: this.getBranchTenGods(this.dayStem, this.hourBranch)
+                };
+
+                return result;
+            }
         }
     </script>
 </head>
@@ -253,12 +346,12 @@
         <div class="input-container">
             <input type="text" id="birth" placeholder="생년월일시 입력 (예: 199001011200)" pattern="\d{12}" maxlength="12" required onkeydown="main()">
         </div>
-        <!-- <div class="calendar-header">
-            <div class="calendar-header-item">정재</div>
+        <div class="calendar-header">
+            <div class="calendar-header-item">?</div>
             <div class="calendar-header-item">일간</div>
-            <div class="calendar-header-item">정인</div>
-            <div class="calendar-header-item">길제</div>
-        </div> -->
+            <div class="calendar-header-item" id="top-month-ss">정인</div>
+            <div class="calendar-header-item" id="top-year-ss">길제</div>
+        </div>
         <div class="calendar-content">
             <div class="calendar-item">
                 <svg width="80" height="80" viewBox="0 0 80 80">
@@ -311,12 +404,12 @@
                 </svg>
             </div>
         </div>
-        <!-- <div class="calendar-footer">
-            <div class="calendar-footer-item">정재</div>
-            <div class="calendar-footer-item">월건(납)</div>
-            <div class="calendar-footer-item">정인</div>
-            <div class="calendar-footer-item">길제</div>
-        </div> -->
+        <div class="calendar-footer">
+            <div class="calendar-footer-item">?</div>
+            <div class="calendar-footer-item" id="bottom-day-ss">월건(납)</div>
+            <div class="calendar-footer-item" id="bottom-month-ss">정인</div>
+            <div class="calendar-footer-item" id="bottom-year-ss">길제</div>
+        </div>
     </div>
 </body>
 </html>
