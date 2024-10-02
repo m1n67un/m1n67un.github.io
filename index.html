@@ -231,7 +231,7 @@
             document.querySelector("#bottom-day").parentNode.querySelector('rect').setAttribute('fill', setBgColor(day_ganji[1]));
             document.querySelector("#bottom-day").setAttribute('fill', setColor(day_ganji[1]));
 
-            const saju = new Saju("癸", "酉", "甲", "子", "丙", "子", "壬", "辰");
+            const saju = new Saju(year_ganji[0], year_ganji[1], month_ganji[0], month_ganji[1], day_ganji[0], day_ganji[1], "壬", "辰");
             const tenGods = saju.getTenGods();
 
             for (const [pillar, gods] of Object.entries(tenGods)) {
