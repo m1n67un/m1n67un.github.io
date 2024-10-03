@@ -120,6 +120,33 @@
         .green { background-color: #D9EAD3; }
         .blue { background-color: #D0E2F3; }
         .purple { background-color: #E1D5E7; }
+        .input-container {
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+        }
+        .input-container input {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background-color: #3367D6;
+        }
     </style>
     <script>
         class Manseryk {
@@ -171,6 +198,7 @@
 
         function splitDateTime(dateTimeString) {
             if (dateTimeString.length !== 12) {
+                alert("입력 문자열은 정확히 12자리여야 합니다.");
                 throw new Error("입력 문자열은 정확히 12자리여야 합니다.");
             }
 
@@ -423,11 +451,31 @@
             return Math.round(decimalTime * 10) / 10;
         }
 
-        // 사용 예시
-        console.log(timeToDecimal(9, 30));  // 9.5
-        console.log(timeToDecimal(13, 45)); // 13.8
-        console.log(timeToDecimal(18, 15)); // 18.3
-        console.log(timeToDecimal(23, 59)); // 24.0
+        
+        function performSearch() {
+            let searchInput = document.getElementById("birth");
+            
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm === '') {
+                resultDiv.textContent = '검색어를 입력하세요.';
+                return;
+            }
+            
+            main();
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            let searchInput = document.getElementById("birth"); 
+            searchInput.addEventListener('keydown', function(event) {
+                if (event.key == 'Enter') {
+                    performSearch();
+                }
+            });
+            // 숫자가 아닌 문자 입력 방지
+            searchInput.addEventListener('input', function(e) {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+        });
     </script>
 </head>
 <body>
@@ -448,7 +496,8 @@
             </svg>
         </div>
         <div class="input-container">
-            <input type="text" id="birth" placeholder="생년월일시 입력 (예: 199001011200)" pattern="\d{12}" maxlength="12" required onkeyup="main()">
+            <input type="text" id="birth" placeholder="생년월일시 입력 (예: 199001011200)" pattern="\d{12}" maxlength="12" required>
+            <button class="search-button" onclick="main()">Ping</button>
         </div>
         <div class="calendar-header">
             <div class="calendar-header-item" id="top-hour-ss">-</div>
