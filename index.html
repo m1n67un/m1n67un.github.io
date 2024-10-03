@@ -78,8 +78,49 @@
             max-width: 100%;
             height: auto;
         }
+        .daeun-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #e0e0e0;
+        }
+        .daeun-title {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .daeun-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .daeun-table td {
+            width: 11.11%;
+            text-align: center;
+            vertical-align: middle;
+            height: 40px;
+        }
+        .daeun-number {
+            font-size: 16px;
+            color: #333;
+        }
+        .daeun-chinese {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+        .daeun-korean {
+            font-size: 14px;
+        }
+        .yellow { background-color: #FFF2CC; }
+        .orange { background-color: #FCE4D6; }
+        .red { background-color: #F8CBAD; }
+        .green { background-color: #D9EAD3; }
+        .blue { background-color: #D0E2F3; }
+        .purple { background-color: #E1D5E7; }
     </style>
-
     <script>
         class Manseryk {
             constructor() {
@@ -407,7 +448,7 @@
             </svg>
         </div>
         <div class="input-container">
-            <input type="text" id="birth" placeholder="생년월일시 입력 (예: 199001011200)" pattern="\d{12}" maxlength="12" required onkeydown="main()">
+            <input type="text" id="birth" placeholder="생년월일시 입력 (예: 199001011200)" pattern="\d{12}" maxlength="12" required onkeyup="main()">
         </div>
         <div class="calendar-header">
             <div class="calendar-header-item" id="top-hour-ss">-</div>
@@ -473,6 +514,61 @@
             <div class="calendar-footer-item" id="bottom-month-ss">-</div>
             <div class="calendar-footer-item" id="bottom-year-ss">-</div>
         </div>
+        <div class="daeun-container">
+            <div class="daeun-title">대운(대운수:6, 순행) <b style="color: red;">[미개발]</b></div>
+            <table class="daeun-table">
+                <tr>
+                    <td class="daeun-number">106</td>
+                    <td class="daeun-number">96</td>
+                    <td class="daeun-number">86</td>
+                    <td class="daeun-number">76</td>
+                    <td class="daeun-number">66</td>
+                    <td class="daeun-number">56</td>
+                    <td class="daeun-number">46</td>
+                    <td class="daeun-number">36</td>
+                    <td class="daeun-number">26</td>
+                </tr>
+                <tr>
+                    <td class="yellow"><div class="daeun-chinese">庚</div></td>
+                    <td class="orange"><div class="daeun-chinese">己</div></td>
+                    <td class="red"><div class="daeun-chinese">戊</div></td>
+                    <td class="green"><div class="daeun-chinese">丁</div></td>
+                    <td class="blue"><div class="daeun-chinese">丙</div></td>
+                    <td class="purple"><div class="daeun-chinese">乙</div></td>
+                    <td class="yellow"><div class="daeun-chinese">甲</div></td>
+                    <td class="orange"><div class="daeun-chinese">癸</div></td>
+                    <td class="red"><div class="daeun-chinese">壬</div></td>
+                </tr>
+                <tr>
+                    <td class="yellow"><div class="daeun-chinese">辛</div></td>
+                    <td class="orange"><div class="daeun-chinese">庚</div></td>
+                    <td class="red"><div class="daeun-chinese">己</div></td>
+                    <td class="green"><div class="daeun-chinese">戊</div></td>
+                    <td class="blue"><div class="daeun-chinese">丁</div></td>
+                    <td class="purple"><div class="daeun-chinese">丙</div></td>
+                    <td class="yellow"><div class="daeun-chinese">乙</div></td>
+                    <td class="orange"><div class="daeun-chinese">甲</div></td>
+                    <td class="red"><div class="daeun-chinese">癸</div></td>
+                </tr>
+                <tr>
+                    <td class="daeun-korean">제왕</td>
+                    <td class="daeun-korean">식</td>
+                    <td class="daeun-korean">병</td>
+                    <td class="daeun-korean">사</td>
+                    <td class="daeun-korean">묘</td>
+                    <td class="daeun-korean">절</td>
+                    <td class="daeun-korean">태</td>
+                    <td class="daeun-korean">양</td>
+                    <td class="daeun-korean">관</td>
+                </tr>
+            </table>
+        </div>
     </div>
+
+    <script>
+        // ... (All the JavaScript code from the previous file goes here, unchanged)
+        
+        // Make sure to keep the main() function and all other necessary functions
+    </script>
 </body>
 </html>
