@@ -4,8 +4,6 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "jekyll-remote-theme"
-
 gem "html-proofer", "~> 5.0", group: :test
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
@@ -14,4 +12,3 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
-gem "webrick", "~> 1.9"
