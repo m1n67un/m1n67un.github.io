@@ -1,0 +1,16 @@
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/home/polyroly/.rvm/rubies/ruby-3.1.0/bin/ruby -I /home/polyroly/.rvm/rubies/ruby-3.1.0/lib/ruby/3.1.0 -r ./siteconf20241215-46217-ic6unz.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= clean
+
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\=
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20241215-46217-s1ruus

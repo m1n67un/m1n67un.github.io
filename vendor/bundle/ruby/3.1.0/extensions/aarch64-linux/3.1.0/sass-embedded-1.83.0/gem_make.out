@@ -1,0 +1,12 @@
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/sass-embedded-1.83.0/ext/sass
+/home/polyroly/.rvm/rubies/ruby-3.1.0/bin/ruby -I/home/polyroly/.rvm/rubies/ruby-3.1.0/lib/ruby/3.1.0 -rrubygems /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/rake-13.2.1/exe/rake RUBYARCHDIR\=/mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/extensions/aarch64-linux/3.1.0/sass-embedded-1.83.0 RUBYLIBDIR\=/mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/extensions/aarch64-linux/3.1.0/sass-embedded-1.83.0
+gem install --force --install-dir /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/sass-embedded-1.83.0/ext/sass/ruby --no-document --ignore-dependencies --platform aarch64-linux-gnu --version 1.83.0 sass-embedded
+fetch https://github.com/sass/dart-sass/releases/download/1.83.0/dart-sass-1.83.0-linux-arm64.tar.gz
+tar -vxC . -f dart-sass-1.83.0-linux-arm64.tar.gz --no-same-owner --no-same-permissions
+rm -rf /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/sass-embedded-1.83.0/ext/sass/ruby
+mkdir -p .
+dart-sass/src/LICENSE
+dart-sass/src/dart
+dart-sass/src/sass.snapshot
+dart-sass/sass
+rm dart-sass-1.83.0-linux-arm64.tar.gz

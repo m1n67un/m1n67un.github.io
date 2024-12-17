@@ -1,0 +1,32 @@
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/io-event-1.7.4/ext
+/home/polyroly/.rvm/rubies/ruby-3.1.0/bin/ruby -I /home/polyroly/.rvm/rubies/ruby-3.1.0/lib/ruby/3.1.0 -r ./siteconf20241215-46217-mt3m2q.rb extconf.rb
+checking for rb_ext_ractor_safe()... yes
+checking for &rb_fiber_transfer()... yes
+checking for -luring... no
+checking for sys/epoll.h... yes
+checking for sys/event.h... no
+checking for sys/wait.h... yes
+checking for sys/eventfd.h... yes
+checking for rb_io_descriptor()... yes
+checking for &rb_process_status_wait()... no
+checking for rb_fiber_current()... yes
+checking for &rb_fiber_raise()... yes
+checking for epoll_pwait2()... yes
+checking for ruby/io/buffer.h... yes
+creating extconf.h
+creating Makefile
+
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/io-event-1.7.4/ext
+make DESTDIR\= clean
+
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/io-event-1.7.4/ext
+make DESTDIR\=
+compiling ./io/event/event.c
+compiling ./io/event/selector/selector.c
+compiling ./io/event/selector/epoll.c
+compiling ./io/event/interrupt.c
+linking shared-object IO_Event.so
+
+current directory: /mnt/c/Users/rkdal/dev/mgit/m1n67un.github.io/vendor/bundle/ruby/3.1.0/gems/io-event-1.7.4/ext
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 IO_Event.so ./.gem.20241215-46217-g6n4kw
