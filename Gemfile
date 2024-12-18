@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
 gemspec
@@ -12,3 +10,6 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
+
+gem "jekyll", "~> 4.3.4"
+gem "jekyll-remote-theme"
