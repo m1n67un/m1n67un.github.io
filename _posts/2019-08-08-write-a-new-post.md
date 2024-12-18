@@ -1,5 +1,5 @@
 ---
-title: Writing a New Post
+title: Jekyll 테마 사용법 2 - Writing a New Post
 author: cotes
 date: 2019-08-08 14:10:00 +0800
 categories: [Blogging, Tutorial]
