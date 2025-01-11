@@ -5,8 +5,6 @@ date: 2024-12-14 03:00:00 +0800
 categories: [Service Manual, Develop Paper]
 tags: [Domain]
 ---
-### 도메인 연동 서비스 메뉴얼
-
 #### 1. 서버 대행 요청하는 경우
 
 **[개요]**
