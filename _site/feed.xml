@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>PolyRoly</title>
   <subtitle>Lead SpringDeveloper Rust &amp; Javascript • Open Source Software Engineer</subtitle>
-  <updated>2024-12-18T10:42:46+09:00</updated>
+  <updated>2025-01-11T18:31:00+09:00</updated>
   <author>
     <name>PolyRoly</name>
     <uri>http://localhost:4000/</uri>
@@ -13,10 +13,111 @@
   <link rel="alternate" type="text/html" hreflang="ko"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
-  <rights> © 2024 PolyRoly </rights>
+  <rights> © 2025 PolyRoly </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>도메인 리다이렉트 서비스 메뉴얼</title>
+    <link href="http://localhost:4000/posts/KMONG_REDIRECT_SERVICE/" rel="alternate" type="text/html" title="도메인 리다이렉트 서비스 메뉴얼" />
+    <published>2024-12-14T04:00:00+09:00</published>
+  
+    <updated>2024-12-14T04:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/KMONG_REDIRECT_SERVICE/</id>
+    <content type="text/html" src="http://localhost:4000/posts/KMONG_REDIRECT_SERVICE/" />
+    <author>
+      <name>polyroly</name>
+    </author>
+
+  
+    
+    <category term="Service Manual" />
+    
+    <category term="Develop Paper" />
+    
+  
+
+  <summary>도메인 연동 서비스 메뉴얼
+
+1. 서버 대행 요청하는 경우
+
+[개요]
+
+요청에 따라 리다이렉션 서비스를 제공하며, 서버의 유지보수와 관리는 판매사(PolyRoly) 측에서 전담합니다. 이 방식은 기술적인 부분에 신경 쓰지 않아도 되는 편리함을 제공합니다.
+
+
+
+[구성 및 절차]
+
+  서버 환경 준비
+    
+      리다이렉션 서버는 안정성과 확장성을 고려하여 클라우드 호스팅 서비스를 활용합니다.
+      SSL 인증서를 설치하여 보안성을 강화합니다.
+    
+  
+  리다이렉션 설정
+    
+      도메인을 서버에 연결합니다.
+      도메인 매핑 및 리다이렉션 규칙을 설정합니다 (예: 301/302 리다이렉션).
+    
+  
+  유지보수 및 지원
+    
+      주기적인 서버 모니터링...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>도메인 연동 서비스 메뉴얼</title>
+    <link href="http://localhost:4000/posts/KMONG_DOMAIN_SERVICE-copy/" rel="alternate" type="text/html" title="도메인 연동 서비스 메뉴얼" />
+    <published>2024-12-14T04:00:00+09:00</published>
+  
+    <updated>2024-12-14T04:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/KMONG_DOMAIN_SERVICE-copy/</id>
+    <content type="text/html" src="http://localhost:4000/posts/KMONG_DOMAIN_SERVICE-copy/" />
+    <author>
+      <name>polyroly</name>
+    </author>
+
+  
+    
+    <category term="Service Manual" />
+    
+    <category term="Develop Paper" />
+    
+  
+
+  <summary>1. 서비스 개요
+
+도메인 연동 작업 서비스는 고객이 소유한 도메인을 원하는 플랫폼, 웹사이트 또는 애플리케이션에 연동하는 과정을 지원합니다. 이 메뉴얼은 도메인 연동 작업의 전반적인 절차와 고객이 준비해야 할 항목을 안내합니다.
+
+
+
+2. 주요 서비스 항목
+
+
+  도메인 구매 또는 기존 도메인 활용 여부 확인
+  네임서버 설정 변경 지원
+  DNS 레코드 설정 (A, CNAME, MX, TXT 등)
+  HTTPS 보안 인증서 (SSL) 적용
+  도메인 정상 작동 확인 테스트
+
+
+
+
+3. 고객 준비 사항
+
+
+  도메인 계정 정보: 고객이 소유한 도메인 계정의 로그인 정보 (도메인 등록업체 계정 포함).
+  플랫폼 정보: 연동할 플랫폼의 기본 정보 (예: 웹 호스팅 서비스, CMS, 애플리케이션 등).
+...</summary>
+
+  </entry>
 
   
   <entry>
@@ -50,11 +151,11 @@
 
   
   <entry>
-    <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
+    <title>Jekyll 테마 사용법 4 - Customize the Favicon</title>
+    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Jekyll 테마 사용법 4 - Customize the Favicon" />
     <published>2019-08-11T01:34:00+09:00</published>
   
-    <updated>2019-08-11T01:34:00+09:00</updated>
+    <updated>2024-12-18T15:01:12+09:00</updated>
   
     <id>http://localhost:4000/posts/customize-the-favicon/</id>
     <content type="text/html" src="http://localhost:4000/posts/customize-the-favicon/" />
@@ -80,11 +181,11 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
 
   
   <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <title>Jekyll 테마 사용법 3 - Getting Started</title>
+    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Jekyll 테마 사용법 3 - Getting Started" />
     <published>2019-08-09T21:55:00+09:00</published>
   
-    <updated>2019-08-09T21:55:00+09:00</updated>
+    <updated>2024-12-18T15:01:12+09:00</updated>
   
     <id>http://localhost:4000/posts/getting-started/</id>
     <content type="text/html" src="http://localhost:4000/posts/getting-started/" />
@@ -101,62 +202,6 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
   
 
   <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T15:10:00+09:00</published>
-  
-    <updated>2019-08-08T15:10:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/write-a-new-post/</id>
-    <content type="text/html" src="http://localhost:4000/posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
-
-Naming and Path
-
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Text and Typography</title>
-    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T12:33:00+09:00</published>
-  
-    <updated>2019-08-08T12:33:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/text-and-typography/</id>
-    <content type="text/html" src="http://localhost:4000/posts/text-and-typography/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Demo" />
-    
-  
-
-  <summary>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</summary>
 
   </entry>
 
