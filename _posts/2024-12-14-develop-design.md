@@ -4,6 +4,8 @@ author: polyroly
 date: 2024-12-14 03:00:00 +0800
 categories: [Blogging, Develop Paper]
 tags: [Functional Specification, 기능정의서]
+
+published: false
 ---
 
 첫번째, 두번째 회사를 지나고, 세번째 회사는 첫번쨰 직장의 이사급 임원분의 창업으로 기회가 되어 스타트업으로 들어갔다.
